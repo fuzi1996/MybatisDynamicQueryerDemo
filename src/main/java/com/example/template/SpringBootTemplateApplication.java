@@ -1,6 +1,6 @@
 package com.example.template;
 
-import com.github.mybatisdq.MyBatisDynamicQueryer;
+import com.fuzi1996.demo.MyBatisDynamicQueryer;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;

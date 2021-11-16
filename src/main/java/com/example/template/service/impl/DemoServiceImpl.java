@@ -1,7 +1,7 @@
 package com.example.template.service.impl;
 
 import com.example.template.service.DemoService;
-import com.github.mybatisdq.MyBatisDynamicQueryer;
+import com.fuzi1996.demo.MyBatisDynamicQueryer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

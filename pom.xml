@@ -41,8 +41,8 @@
         </dependency>
         <dependency>
             <groupId>com.github.mybatisdq</groupId>
-            <artifactId>MybatisDynamicQueryer</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <artifactId>mybatis-dynamic-queryer</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>
@@ -72,13 +72,15 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <distributionManagement>
+    <repositories>
         <repository>
             <id>github</id>
-            <name>GitHub fuzi1996 MyBatisDynamicQueryer Packages</name>
-            <url>https://maven.pkg.github.com/fuzi1996/MybatisDynamicQueryerDemo</url>
+            <url>https://maven.pkg.github.com/fuzi1996/MyBatisDynamicQueryer</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </repository>
-    </distributionManagement>
+    </repositories>
     <build>
         <resources>
             <resource>
@@ -113,6 +115,9 @@
                 </plugin>
                 <plugin>
                     <artifactId>maven-surefire-plugin</artifactId>
+                    <configuration>
+                        <skipTests>true</skipTests>
+                    </configuration>
                     <version>2.22.1</version>
                 </plugin>
                 <plugin>

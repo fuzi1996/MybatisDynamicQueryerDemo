@@ -19,7 +19,9 @@ public class SpringBootTemplateApplication {
 
     @Bean
     public MyBatisDynamicQueryer getMyBatisDynamicQueryer(){
-        return new MyBatisDynamicQueryer(sqlSessionFactory);
+        MyBatisDynamicQueryer myBatisDynamicQueryer = new MyBatisDynamicQueryer(sqlSessionFactory);
+        System.out.println(myBatisDynamicQueryer.getVersion());
+        return myBatisDynamicQueryer;
     }
 
 }

@@ -1,6 +1,6 @@
 package com.example.template.service.impl;
 
-import com.example.template.service.DemoService;
+import com.example.template.service.DynamicExcuterService;
 import com.github.mybatisdq.MyBatisDynamicQueryer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-public class DemoServiceImpl implements DemoService {
+public class DynamicExcuterServiceImpl implements DynamicExcuterService {
     @Autowired
     private MyBatisDynamicQueryer myBatisDynamicQueryer;
 

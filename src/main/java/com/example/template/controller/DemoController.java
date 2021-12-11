@@ -21,4 +21,9 @@ public class DemoController {
         return this.dynamicExcuterService.excute(excuteParam.getSql(),excuteParam.getParam());
     }
 
+    @PostMapping("/executeByProvider")
+    public List<Map<String,Object>> executeByProvider(@RequestBody ExcuteParam excuteParam){
+        return this.dynamicExcuterService.selectByProvider(excuteParam.getSql(),excuteParam.getParam());
+    }
+
 }

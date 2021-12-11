@@ -3,7 +3,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- namespace属性是名称空间，必须唯一 -->
-<mapper namespace="com.example.template.mapper.DemoController">
+<mapper namespace="com.example.template.mapper.DemoMapper">
     <sql id="selectColumns">
         ${alias}.*
     </sql>
